@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Form FCC Project</title>
+    <link href="style.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve</p>
+
+    <form id="survey-form">
+        <!-- Survey Form Entry labels-->
+        <div>
+            <label class="title">name</label>
+            <input
+            type = "text" 
+            name = "name" 
+            id = "name" 
+            class="form-control"
+            placeholder = "First and Last Name" required
+            />
+        </div>
+        <div>
+            <label class="title">Email</label>
+            <input
+            type = "email" 
+            name = "email" 
+            id = "email" 
+            class="form-control"
+            placeholder = "email@website.com" required
+            />
+        </div>
+        <div>
+            <label class="title">What is your age?</label>
+            <input
+            type = "number" 
+            name = "age" 
+            id = "number" 
+            min = "18" 
+            max = "111" 
+            class="form-control" 
+            placeholder = "Must be over 18" required
+            > 
+        </div>
+        <div>
+            <p class="title">What airport do you prefer to fly out from?</p>
+            <select 
+            id= "dropdown" 
+            name="airport" required
+            class="dropdown">
+
+                <option disabled selected value>Choose One</option>
+                <option>Dublin</option>
+                <option>Cork</option>
+                <option>Belfast</option>
+                <option>Prefer not to say</option>
+
+            </select>
+        </div>
+        <div>
+            <p class="title">Would you recommend us to a friend?</p>
+            <label>
+                <input
+                    name="user-recommend" 
+                    value="yes" 
+                    type="radio"
+                    class="input-radio"
+                    /> Yes
+            </label>
+            <label>
+                <input
+                    name="user-recommend" 
+                    value="maybe" 
+                    type="radio"
+                    class="input-radio"
+                    /> Maybe
+            </label>
+            <label>
+                <input
+                    name="user-recommend" 
+                    value="no" 
+                    type="radio"
+                    class="input-radio"
+                    /> No
+            </label>
+        </div>
+        <div>
+            <p class="title">What would you like to see more from us?</p>
+
+            <label>
+                <input
+                name="prefer" 
+                value="upgrade-options" 
+                type="checkbox" 
+                class="input-checkbox"
+                > upgrade-options
+            </label>
+
+            <label>
+                <input
+                name="prefer" 
+                value="inflight-snacks" 
+                type="checkbox" 
+                class="input-checkbox"
+                >inflight snacks
+            </label>
+
+            <label>
+                <input
+                name="prefer" 
+                value="inflight-movies" 
+                type="checkbox" 
+                class="input-checkbox"
+                >inflight movies
+            </label>
+
+            <label>
+                <input
+                name="prefer" 
+                value="more-leg-room" 
+                type="checkbox" 
+                class="input-checkbox"
+                >more leg room
+            </label>
+
+            <label>
+                <input
+                name="prefer" 
+                value="complimentary-drinks" 
+                type="checkbox" 
+                class="input-checkbox"
+                >complimentary drinks
+            </label>
+
+            <label>
+                <input
+                name="prefer" 
+                value="lounge-acess" 
+                type="checkbox" 
+                class="input-checkbox"
+                >lounge access
+            </label>
+        </div>
+        <div>
+            <p class="title">Any comments or suggestions?</p>
+            <textarea 
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comments here..."
+            ></textarea>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div>
+            <button 
+            type="submit" 
+            id="submit"
+            class="submit-button">
+            Join for Complimentary Lounge Access
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
